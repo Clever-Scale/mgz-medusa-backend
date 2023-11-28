@@ -2,18 +2,18 @@
 nixPkgs = ['nodejs', 'yarn']
 
 [variables]
-DATABASE_TYPE=postgres
-DATABASE_URL=postgres://mgz:fPclZhASm6X0w6528cphq2OOkLKYF7GF@dpg-clhi81fjc5ks73elssag-a.singapore-postgres.render.com/mgz
-MEDUSA_ADMIN_ONBOARDING_TYPE=nextjs
-STORE_CORS=http://localhost:8000,http://localhost:7001,https://mgz-storefront.netlify.app,https://mgz-storefront.vercel.app
-MEDUSA_ADMIN_ONBOARDING_NEXTJS_DIRECTORY=mgz-ecommerce-storefront
-REDIS_URL=redis://default:password@redis-17160.c295.ap-southeast-1-1.ec2.cloud.redislabs.com:17160/0
-SENDGRID_API_KEY=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
-SENDGRID_FROM=heinkozin4@gmail.com
-SENDGRID_ORDER_PLACED_ID=d-30bc720147a94fc5a530c7c63639153a
-NODE_ENV=production
+DATABASE_TYPE='postgres'
+DATABASE_URL='postgres://mgz:fPclZhASm6X0w6528cphq2OOkLKYF7GF@dpg-clhi81fjc5ks73elssag-a.singapore-postgres.render.com/mgz'
+MEDUSA_ADMIN_ONBOARDING_TYPE='nextjs'
+STORE_CORS='http://localhost:8000,http://localhost:7001,https://mgz-storefront.netlify.app,https://mgz-storefront.vercel.app'
+MEDUSA_ADMIN_ONBOARDING_NEXTJS_DIRECTORY='mgz-ecommerce-storefront'
+REDIS_URL='redis://default:password@redis-17160.c295.ap-southeast-1-1.ec2.cloud.redislabs.com:17160/0'
+SENDGRID_API_KEY='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'
+SENDGRID_FROM='heinkozin4@gmail.com'
+SENDGRID_ORDER_PLACED_ID='d-30bc720147a94fc5a530c7c63639153a'
+NODE_ENV='production'
 NPM_CONFIG_PRODUCTION=false
-JWT_SECRET=mgz COOKIE_SECRET=mgz
+JWT_SECRET=mgz COOKIE_SECRET='mgz'
 PORT=9000
 
 [phases.install]
