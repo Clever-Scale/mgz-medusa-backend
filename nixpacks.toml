@@ -23,5 +23,7 @@ cmds=['yarn install']
 [phases.build]
 cmds = ['yarn build']
 
+[phases.start]
+
 [start]
-cmds = ['yarn medusa migrations run && yarn medusa start']
+cmd = " medusa migrations run && yarn medusa start "
