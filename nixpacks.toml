@@ -13,7 +13,7 @@ SENDGRID_FROM = 'heinkozin4@gmail.com'
 SENDGRID_ORDER_PLACED_ID = 'd-30bc720147a94fc5a530c7c63639153a'
 NODE_ENV = 'production'
 NPM_CONFIG_PRODUCTION = false
-JWT_SECRET = mgz
+JWT_SECRET = 'mgz'
 COOKIE_SECRET = 'mgz'
 PORT = 9000
 
