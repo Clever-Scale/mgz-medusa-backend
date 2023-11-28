@@ -73,5 +73,8 @@
     "collectCoverageFrom": ["**/*.(t|j)s"],
     "coverageDirectory": "./coverage",
     "testEnvironment": "node"
+  },
+  "engines": {
+    "yarn": "1.22.19"
   }
 }
