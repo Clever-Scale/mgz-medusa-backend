@@ -15,7 +15,7 @@ NODE_ENV = 'production'
 NPM_CONFIG_PRODUCTION = 'false'
 JWT_SECRET = 'mgz'
 COOKIE_SECRET = 'mgz'
-PORT = 9000
+PORT = '9000'
 
 [phases.install]
 cmds=['yarn install']
