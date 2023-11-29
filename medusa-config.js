@@ -33,6 +33,8 @@ const DATABASE_URL =
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
+const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:9000";
+
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
@@ -40,6 +42,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
+      backend_url: BACKEND_URL,
     },
   },
   {
@@ -77,9 +80,9 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   database_extra:
-       process.env.NODE_ENV !== "development"
-         ? { ssl: { rejectUnauthorized: false } }
-         : {},
+    process.env.NODE_ENV !== "development"
+      ? { ssl: { rejectUnauthorized: false } }
+      : {},
 
   // Uncomment the following lines to enable REDIS
   redis_url: REDIS_URL

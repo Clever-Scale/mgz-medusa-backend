@@ -16,6 +16,7 @@ NPM_CONFIG_PRODUCTION = 'false'
 JWT_SECRET = 'mgz'
 COOKIE_SECRET = 'mgz'
 PORT = '9000'
+BACKEND_URL = 'https://mgz-backend.panel.money-rise.com'
 
 [phases.install]
 cmds=['yarn install']
