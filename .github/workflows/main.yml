@@ -18,5 +18,6 @@ jobs:
       - name: Push to my Dokku
         uses: dokku/github-action@master
         with:
+          branch: main
           git_remote_url: "ssh://dokku@panel.money-rise.com:22/mgz-backend"
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
